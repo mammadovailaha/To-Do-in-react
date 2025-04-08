@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    background-color: #f3ebde;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add_task_section {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #f3ebde;
+    border-radius: 10px;
+   
+}
+
+.add_task_input {
+    width: 480px;
+    height: 40px;
+    border: none;
+    background-color: none;
+    border-radius: 40px;
+}
+
+.add_task_input input {
+    width: 90%;
+    height: 100%;
+    border: none;
+
+
+    background-color: #FFF;
+    border-radius: 40px;
+    color: #adacac;
+    outline: none;
+}
+
+.add_task_input input:focus {
+    border: 1px solid #2157d7;
+}
+
+.add_task_input input::placeholder {
+    color: #adacac;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.add_btn {
+    padding: 5px 20px;
+    border: none;
+    background-color: #4976df;
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.add_btn:focus {
+    background-color: #2a4cac;
+}
+
+
+.all_list {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    background-color: #f3ebde;
+    border-radius: 10px;
+}
+
+.all_list ul {
+    list-style: none;
+    width: 100%;
+    height: auto;
+
+}
+
+.all_list ul li {
+    width: 90%;
+    height: auto;
+
+}
+
+.all_list ul li .list {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.all_list ul li .list .task {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task p {
+    font-size: 13px;
+    letter-spacing: 0.7px;
+    color: rgb(44, 44, 165);
+}
+
+.list input {
+    cursor: pointer;
+}
+
+.list .delete_btn , .total_btn {
+    border: none;
+    outline: none;
+    background-color: #4976df;
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
