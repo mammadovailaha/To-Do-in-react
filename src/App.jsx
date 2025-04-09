@@ -1,24 +1,23 @@
 import React from 'react'
 import './App.css'
 import ListContainer from '/src/components/listContainer/ListContainer.jsx'
-// import ListContext from '/src/components/context/ListContext.jsx';
 import Header from '/src/components/header/Header.jsx';
-
+import TodoContext from './components/context/TodoContext';
+import { ListProvider } from "/src/components/context/TodoContext.jsx";
 
 function App() {
-  
-// const [list, setList] = useState([]);
+
+
+
 
   return (
-    <div className="App">
-      {/* <ListContext.Provider value={[list, setList]}> */}
+    <TodoContext.Provider >
+      <div className="App">
         < Header />
-        <ListContainer />
-{/* 
-      </ListContext.Provider> */}
-
-    </div>
-  )
+        <ListContainer /> 
+      </div>
+      </TodoContext.Provider>
+  );
 }
 
 export default App;

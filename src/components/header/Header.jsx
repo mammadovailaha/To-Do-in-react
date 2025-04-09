@@ -1,12 +1,17 @@
+import React, {useContext} from 'react';
 import "/src/components/header/Header.css"
-import React from 'react';
-// import ListContext from '../context/ListContext.jsx';
+import TodoContext from "/src/components/context/TodoContext";
+
+
+
 
 function Header() {
-   
-    // const { list } = useContext(ListContext);
-
-
+   const context=useContext(TodoContext)
+  if(!context){
+    console.error("Header component is not inside ListProvider");
+    return null;
+  }
+  const {tasks}=context;
     return (
 
         <div className="header">
@@ -14,7 +19,7 @@ function Header() {
                 <img src="./public/to-do.png" alt="To-do list logo" />
                 <h2> To-Do List</h2></div>
             <div className='total_list'><img src="./public/ToDoTotal.png" alt="total list" />
-                <span>0</span></div>
+                <span>{tasks.length}</span></div>
         </div>
 
 
