@@ -62,7 +62,7 @@
     border-radius: 7px;
     color: #fff;
     cursor: pointer;
-
+margin-right: 15px;
 }
 
 .add_btn:focus {
@@ -73,7 +73,7 @@
 .all_list {
     width: 100%;
     height: auto;
-    margin: 10px;
+    margin: 10px 0;
     background-color: #f3ebde;
     border-radius: 10px;
 }
@@ -86,9 +86,9 @@
 }
 
 .all_list ul li {
-    width: 90%;
+    width: 95%;
     height: auto;
-
+max-width: 1000px;
 }
 
 .all_list ul li .list {
@@ -115,7 +115,7 @@
     cursor: pointer;
 }
 
-.list .delete_btn , .total_btn {
+.list .delete_btn {
     border: none;
     outline: none;
     background-color: #4976df;
@@ -123,5 +123,14 @@
     color: #fff;
     cursor: pointer;
     padding: 5px 10px;
-    margin-left: 10px;
+    margin-left: 30px;
+}
+.actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.OpenModalIcon{
+    font-size: 20px;
+    color: #2157d7;
 }
